@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus ticket calculator</title>
+</head>
+<body>
+    <script>
+
+        var ticketPrice = 800;
+        var age = 20;
+        var students = true;
+
+
+        if(age < 10){
+            // 100% discount
+            document.write ('Awsome Tumar vara free')
+        }else if (students == true){
+            // 50% discount
+           const discount = ticketPrice * 50 / 100;
+           const studentDiscountedPrice = ticketPrice - discount;
+           console.log(studentDiscountedPrice + 'tumi 50% discount free');
+           
+           
+        }
+
+
+    </script>
+</body>
+</html>
