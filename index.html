@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your BMI</title>
+  </head>
+  <body>
+    <script>
+      var weight = prompt("Enter your weight");
+      var height = prompt("Enter your height (m)");
+      var BMI = weight / (height * height);
+      console.log(BMI.toFixed(1));
+      if (BMI < 18.5) {
+        document.write("<h1> you are under weight. </h1>");
+      } else if (BMI >= 18.5 && BMI <= 24.9) {
+        document.write("congragulation you are normal.");
+      } else if (BMI >= 24.9 && BMI <= 29.9) {
+        document.write("you are over weight");
+      } else {
+        document.write("you are obese");
+      }
+    </script>
+  </body>
+</html>
