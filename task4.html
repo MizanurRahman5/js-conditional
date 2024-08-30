@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your result</title>
+  </head>
+  <body>
+    <script>
+      var myRresult = prompt("your result here...");
+      var friendResult = prompt("your friend result here...");
+      if (myRresult >= 80) {
+        if (friendResult >= 80) {
+          document.write("go for a launch session");
+        } else if (friendResult >= 60) {
+          document.write("good luck next time.");
+        } else if (friendResult >= 40) {
+          document.write("friend er massage unseen kore rakho.");
+        } else {
+          document.write("friend ke block korun");
+        }
+      } else {
+        document.write("barite giye ghuman.");
+      }
+    </script>
+  </body>
+</html>
